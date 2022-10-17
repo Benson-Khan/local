@@ -1,0 +1,122 @@
+body {
+    width: auto;
+    height: 100vh;
+    background-color: rgba(3, 1, 29, 0.877);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 1.05rem;
+    color: #ffffff;
+    line-height: 1.9em;
+    margin: 0;
+}
+
+h1,
+p,
+title {
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    height: fit-content;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+fieldset {
+    border: none;
+}
+
+.one,
+.two {
+    padding-bottom: 30px;
+}
+
+form {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 700px;
+    padding: 10px 0 0 10px;
+}
+
+
+input {
+    background-color: rgba(26, 24, 24, 0.911);
+    color: #ffffff;
+}
+
+input:focus {
+    border: 1px #be1212;
+}
+
+span {
+    font-style: italic;
+}
+
+#name,
+#email {
+    max-width: 80vw;
+    min-width: 30vw;
+}
+
+#number {
+    max-width: 40vw;
+    min-width: 20vw;
+}
+
+#dropdown {
+    max-width: 30vw;
+    min-width: 230px;
+}
+
+input[id="submit"] {
+    padding: 20px 10px;
+    background-color: rgba(10, 170, 10, 0.733);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    width: auto;
+    border-radius: 30%/50%;
+    margin: 1em auto;
+}
+
+input[id="submit"]:hover {
+    background-color: #00ffff;
+    width: 150px;
+    font-size: 40px;
+    width: auto;
+    color: #000000;
+    border-radius: 40px;
+    transition-duration: 2s;
+}
+
+.two .radio,
+.three .check {
+    display: block;
+    line-height: 1.5em;
+}
+
+.personal {
+    font-weight: 800;
+}
+
+.personal input {
+    display: block;
+    height: 1.5em;
+}
+
+.drops {
+    background-color: #0e0b0bc4;
+    color: #ffffff;
+    min-width: 300px;
+}
+
+fieldset:last-of-type {
+    border: none;
+}
+
+textarea {
+    display: block;
+}
+
+.field {
+    font: 1.30em bold;
+}

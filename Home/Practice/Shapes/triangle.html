@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Triangle shape in CSS</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <style>
+            .triangle-down {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid red;
+                gap: 20px;
+            }
+
+            .triangle-up {
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 200px solid green;
+            }
+
+            .triangle-left-side {
+                width: 0;
+                height: 0;
+                border-top: 100px solid transparent;
+                border-bottom: 100px solid transparent;
+                border-left: 200px solid rgb(77, 77, 3);
+            }
+
+            .triangle-right-side {
+                width: 0;
+                height: 0;
+                border-top: 100px solid transparent;
+                border-bottom: 100px solid transparent;
+                border-right: 200px solid maroon;
+            }
+
+            .right-angled-triangle {
+                width: 0;
+                height: 0;
+                border-bottom: 100px solid green;
+                border-right: 100px solid transparent;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="triangle-down"></div>
+        <div class="triangle-up"></div>
+        <div class="triangle-left-side"></div>
+        <div class="triangle-right-side"></div>
+        <div class="right-angled-triangle"></div>
+    </body>
+
+</html>

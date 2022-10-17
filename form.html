@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <style>
+            h1,
+            p,
+            legend {
+                text-align: center;
+                font-size: 1.5em;
+                color: #e90d0d;
+            }
+
+            .one input {
+                max-width: max-content;
+            }
+
+            button {
+                margin: auto;
+
+            }
+
+            form {
+                background-image: url("file:///home/benxon/Pictures/Favs/254722200924_status_04178f20668a48abbe1b2d1bf0014f30.jpg");
+                background-size: cover;
+                background-position: center;
+                padding: 10px;
+                width: fit-content;
+
+            }
+
+            .one label {
+                color: #e90d0d;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="html page handler">
+            <h1>Coding Registration Form</h1>
+            <p>Fill in the form below to get enrolled to the upcoming bootcamp</p>
+            <fieldset class="one">
+                <legend>Personal Information:</legend>
+
+                <label for="first name">First Name:</label>
+                <input type="text" value="first name" id="name" name="name" placeholder="First name" required>
+                <br /><br />
+                <label for="second name">Last Name:</label>
+                <input type="text" value="second name" id="name" name="name" placeholder="Last name" required>
+                <br /><br />
+                <label for="email">Valid Email:</label>
+                <input type="email" value="email" id="email" name="email" placeholder="your valid email" required>
+                <br /><br />
+                <label for="username">Username:</label>
+                <input type="text" value="username" id="username" name="username" placeholder="your username" required>
+            </fieldset>
+            <fieldset class="two">
+                <legend>Specialization:</legend>
+
+                <input type="checkbox" id="fullstack" name="Fullstack">
+                <label for="fullstack">Full Stack</label>
+
+                <input type="ckeckbox" id="frontend" name="FrontEnd">
+                <label for="frontEnd">Front End Developer</label>
+
+                <input type="checkbox" name="backend" id="backend">
+                <label for="backend">Back-End Developer</label>
+
+                <input type="checkbox" name="userinterface" id="userInterface">
+                <label for="userinterface">UI Developer</label>
+
+                <input type="checkbox" name="userexperience" id="userExperience">
+                <label for="userexperience">UX Designer</label>
+
+                <input type="checkbox" name="datascience" id="dataScience">
+                <label for="datascience">Data Science</label>
+            </fieldset>
+            <button>Submit</button>
+        </form>
+        <nav>
+            <a href="../HTML CODE/Home/homepage.html">Home</a>
+            <a href="images.html">Images</a>
+        </nav>
+    </body>
+
+</html>
