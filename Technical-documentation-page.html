@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="content" width="device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="description" content=""
+        <title>javascript-technical-documentation-page</title>
+        <link rel="stylesheet" href="technical-documentation.css">
+    </head>
+
+    <body>
+        <div id="parent">
+            <!--Start of the flexible container-->
+            <nav id="navbar">
+                <!--the navbar flexible container starts here-->
+                <header>
+                    <h1>JS Documentation</h1>
+                </header>
+                <ul>
+                    <a href="#Introduction" class="nav-link">Introduction</a>
+                    <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+                    <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+                    <a href="#Hello_world" class="nav-link">Hello world</a>
+                    <a href="#Variables" class="nav-link">Variables</a>
+                    <a href="#Declaring_Variables" class="nav-link">Declaring variables</a>
+                    <a href="#Variable_Scope" class="nav-link">Variable scope</a>
+                    <a href="#Global_Variables" class="nav-link">Global variables</a>
+                    <a href="#Constants" class="nav-link">Constants</a>
+                    <a href="#Data_Types" class="nav-link">Data types</a>
+                    <a href="#If..._else_statement" class="nav-link">If... else statement</a>
+                    <a href="#while_statement" class="nav-link">While statement</a>
+                    <a href="#Function_declarations" class="nav-link">Function declarations</a>
+                    <a href="#Reference" class="nav-link">Reference</a>
+                </ul>
+            </nav>
+        </div>
+        <!--the navbar flexible container ends here-->
+        <main id="main-doc">
+            <!--the main document flexible container starts here-->
+            <section class="main-section" id="Introduction">
+                <header>
+                    <h2>Introduction</h2>
+                </header>
+                <article>
+                    <p> JavaScript is a cross-platform, object-oriented scripting language. It is a small and
+                        lightweight language. Inside a host environment (for example, a web browser), JavaScript
+                        can be connected to the objects of its environment to provide programmatic control over
+                        them.
+                    </p>
+                    <p>JavaScript contains a standard library of objects, such as
+                    <ul>
+                        <li><code>Array,</li></code>
+                        <li><code>Date,</code></li>
+                        <li> and <code>Math,</code></li>
+
+                    </ul> and a core set of language elements such as <ul>
+                        <li><code>operators,</li></code>
+                        <li><code>control structures,</li></code>
+                        <li>and <code>statements.</li></code>
+                    </ul> JavaScript can be extended for a variety of purposes by supplementing it with
+                    additional
+                    objects; for example:
+                    <ul class="list">
+                        <li>Client-side JavaScript extends the core language by supplying objects to control a
+                            browser and its Document Object Model (DOM). For example, Client-side extensions allow an
+                            application to place elements on an HTML form and respond to user events such as
+                            mouse clicks, form input, and page navigation.</li>
+                        <li>Server-side JavaScript extends the core language by supplying objects relevant to
+                            running JavaScript on a server. For example, Server-side extensions allow an application to
+                            communicate with a <code>database,</code> provide continuity of information from one
+                            invocation to another of the application, or perform file manipulations over a server.</li>
+                    </ul>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="What_you_should_already_know">
+                <header>
+                    <h2>What you should already know</h2>
+                </header>
+                <article>
+                    <p>This guide assumes you already have the background knowledge on the following:
+                    <ul class="list">
+                        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                        <li>Good working knowledge of the <code>HyperText Markup Language(HTML).</code></li>
+                        <li>Some programming experience. If you are new to programming, try one of the tutorials
+                            linked on the main page about JavaScript.</li>
+                    </ul>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="JavaScript_and_Java">
+                <header>
+                    <h2>JavaScript and Java</h2>
+                </header>
+                <article>
+                    <p>
+                        JavaScript and Java are similar in some ways but fundamentally different in other ways.
+                        The JavaScript language resembles Java but does not have Java's static typing and strong
+                        type checking. JavaScript follows most Java <code>expression syntax,</code>
+                        <code>naming conventions,</code> and <code>basic control-flow constructs</code> which
+                        was the reason why it was named from LiveScript to JavaScript.
+                    </p>
+                    <p>
+                        In contrast to Java's compile-time system of classes built by declarations, JavaScript
+                        supports a runtime system based on a number of data types
+                        representing<code> numeric,</code><code>Boolean,</code> and <code>string values.</code>
+                    </p>
+                    <p>
+                        JavaScript has a <em>prototype-based</em> object model instead of
+                        the more common class-based object model. The <em>prototype-based</em> model provides
+                        dynamic inheritance; what is inherited can vary for individual objects. Functions can be
+                        properties of objects,executing as loosely typed methods.
+                    </p>
+                    <p>
+                        JavaScript is a very free-form language compared to Java. You do not have to declare all
+                        <code>variables</code>,<code>classes</code> and <code>methods</code>. You do not have to
+                        be concerned with whether methods are private, or public or protected, and you do not
+                        have to implement interfaces. <code>Variables,</code> <code>parameters</code> and
+                        <code>function return types</code> are not explicitly typed.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Hello_world">
+                <header>
+                    <h2>Hello world</h2>
+                </header>
+                <article>
+                    <p>
+                        To get started with JavaScript, open the Scratchpad and write you first "Hello world"
+                        JavaScript code!:
+                        <code class="pre">
+                                function greetMe(yourName) { alert("hello" + yourName); }
+                                greetMe("World");
+                        </code>
+                        Select the code in the pad and hit Ctrl + R and watch it unfold in your browser!
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>
+                    <h2>Variables</h2>
+                </header>
+                <article>
+                    <p>
+                        You use <code>variables</code> for symbolic names in your application.
+                    </p>
+                    <p>
+                        A JavaScript identifier must start with a letter, underscore (_) or dollar sign ($);
+                        subsequent characters can also be digits from (0-9). Because JavaScript is case
+                        sensitive, letters include the characters "A" though "Z" (uppercase) and the characters
+                        "a" through "z" (lowercase).
+                    </p>
+                    <p>
+                        You can use ISO 8859-1 Unicode letters such as ä and ö in identifiers. You can also use
+                        the Unicode escape sequences as characters in identifiers. Some examples of legal names
+                        are Number_hits, temp99 and _name.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Declaring_Variables">
+                <header>
+                    <h2>Declaring Variables</h2>
+                </header>
+                <article>
+                    <p>
+                        You can declare variables in three ways: <br />
+                        With the keyword <code>var.</code> for example:
+                        <code class="pre">
+                            var x = 97
+                    </code>
+                        This syntax can be used to declare both local and global variables. <br />
+                        By simply <code>assigning it a value,</code> for example:
+                        <code class="pre">
+                            x = 97
+                    </code>
+                        This always declares global variables. It generates a strict JavaScript warning. You
+                        shouldn't use this variant. <br />
+                        With the keyword <code>let,</code> for example:
+                        <code class="pre">
+                                let x = 97
+                            </code>
+                        This syntax can be used to declare a <code>block scope</code> <code>local variable.</code>
+                        See
+                        Variable scope below.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Variable_Scope">
+                <header>
+                    <h2>Variable Scope</h2>
+                </header>
+                <article>
+                    <p>
+                        When you declare a variable out of any function, it is called a
+                        <code>global variable,</code>
+                        because it is available to any other code in the current document. When you declare a
+                        variable within a <code>function,</code> it is called a <code>local variable,</code>
+                        because it is available only within that function.
+                    </p>
+                    <p>
+                        JavaScript before <stromg>ECMAScript 2015</stromg> does not have
+                        <code>block statement scope;</code> rather, a variable
+                        declared within a block is local to the function (or global scope) that the variable
+                        resides within. For example, the following code will log 5, because the scope of x is
+                        the function (or global context) within which x is declared, not the block, which in
+                        this case is the if statement. <br />
+                        <br>
+                        <code class="pre">
+                        <code>
+                    if (true) { var x = 5; } console.log(x); // 5
+                        </code>
+                        </code>
+                        This behavior changes, when using the <code>let</code> declaration introduced ECMAScript
+                        2015:
+                        <br />
+                        <code class="pre">
+                        <code>
+                    if (true) {let y = 5;} console.log(y); ReferenceError: y is <br />
+                    not defined
+                        </code>
+                        </code>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Global_Variables">
+                <header>
+                    <h2>Global Variables</h2>
+                </header>
+                <article>
+                    <p>
+                        Global variables are in fact <em>properties</em> of the <em>global object.</em> In web
+                        pages, the global object is window, so you can set and access global variables using
+                        window.variable syntax.
+                    </p>
+                    <p>
+                        Consequently, you can acess global variables declared in one window or frame from
+                        another window or frame by specifying the window or frame name. For example, if a variable
+                        called phoneNumber is declared in a document, you can refer to this variable from an
+                        <code>iframe</code> as parent.phoneNumber.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Constants">
+                <header>
+                    <h2>Constants</h2>
+                </header>
+                <article>
+                    <p>
+                        You can create a read-only, named constant with the <code>const</code> keyword. The
+                        syntax of a constant identifier is the same as for a variable identifier; it must start with a
+                        letter, underscore, or dollar sign and can contain alphabetic, numeric or underscore characters.
+                        <code class="pre">
+                        <code>
+                            const PI = 3.14
+                        </code>
+                        </code>
+                    </p>
+                    <p>
+                        A constant cannot change value through reassignment or be re-declared while the script
+                        is running. It has to be initialized to a value.
+                    </p>
+                    <p>
+                        The scope rules for constants are the same as those for let block scope variables. If
+                        the const keyword is ommited, the identifier is assumed to represent a variable.
+                    </p>
+                    <p>
+                        <em>
+                            You cannot declare a constant with the same name as a function or variable in the
+                            same scope.
+                        </em>
+                        For example:
+                        <code class="pre">
+                        <code>
+                        //THIS WILL CAUSE AN ERROR function f() {}; const f = 5; 
+                        //THIS WILL ALSO CAUSE AN ERROR function f() {const g = 6; var g; 
+                        //statements}
+                        </code>
+                        </code>
+                    </p>
+                    <p>
+                        However, object attributes are not protected, so the following statement is executed
+                        without any problems:
+                        <code class="pre">
+                        <code>
+                            const MY_OBJECT = {"key" : "value"}; MY_OBJECT.key =
+                            "otherValue";
+                        </code>
+                        </code>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Data_Types">
+                <header>
+                    <h2>Data Types</h2>
+                </header>
+                <article>
+                    <p>
+                        The latest ECMAScript standard defines seven data types: <br />
+                    <ul>
+                        <li style="list-style-type:disc;">Six data types that are primitives:</li>
+                    </ul>
+
+                    <ul class="list">
+                        <li><code>Boolean.</code> true and false</li>
+                        <li><code>null.</code> A special keyword denoting a null value. Because JavaScript is
+                            case sensitive, null is not the same as Null or NULL or any other variant.</li>
+                        <li><code>undefined.</code> A top-level property whose value is undefined.</li>
+                        <li><code>Number.</code> 0 or 6 or 39 or 3.14297.</li>
+                        <li><code>String.</code> "love", "random"</li>
+                        <li><code>Symbol.</code> (new in ECMAScript 2015). A data type whose instances are
+                            unique and immutable.</li>
+                    </ul>
+                    <ul>
+                        <li style="list-style-type:disc;">and <code>Object</code></li>
+                    </ul>
+                    </p>
+                    <p>
+                        Although these data types are a relatively small amount, they allow you to perform
+                        useful functions with your applications. Objects and functions are the other fundamental
+                        elements in the language. You can think of objects as named containers for values, and functions
+                        as procedures that your application can perform.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="If..._else_statement">
+                <header>
+                    <h2>If... else statement</h2>
+                </header>
+                <article>
+                    <p>
+                        Use the <em>if</em> statement to execute a statement if the logical condition is true.
+                        Use the <em>else</em> statement to execute a statement if the logical condition if false. An if
+                        statement looks as follows:
+                        <code class="pre">
+                        <code>
+                            if (condition) { statement_1; } else { statement_2; }
+                        </code>
+                        </code>
+                    </p>
+                    <p>
+                        A <code>condition</code> can be any <code>expressions</code> that can evaluate to true
+                        or false. See Boolean for an explanation of what evaluates to true orr false. If condition
+                        evaluates to true, statement_1 is executed, otherwise statement_2 is executed. Statement_1 and
+                        statement_2 can be any statements, including further nested if statements.
+                    </p>
+                    <p>
+                        You may also compound the statements using <em>else if</em> to have multiple conditions
+                        tested in a sequence as follows;
+                        <code class="pre">
+                        <code>
+                            if (condition_1) { statement_1; } else if (condition_2) { statement_2; } else if (condition_n) 
+                            { statement_n; } else { statement_last; }
+                        </code>
+                        </code>
+                    </p>
+                    <p>
+                        In the case of multiple logical conditions, the first one to eveluate to true will be
+                        executed. To execute multiple statements, group them in a block statement ({....}) In general,
+                        it is always advisable to always use <code>block statements,</code> especially when nesting if
+                        statements.
+                        <code class="pre">
+                        <code>
+                            if (condition) { statement_1_runs_if_condition_is_true;
+
+                            statement_2_runs_if_condition_is_true; } else 
+
+                            { statement_3_runs_if_condition_is_false;
+
+                            statement_4_runs_if_condition_is_false; }
+                        </code>
+                        </code>
+                    </p>
+                    <p>
+                        It is <strong>NOT</strong> advisable to use simple assignments on conditional
+                        expressions, because the assignment can be confused with equality when glancing over the code.
+                        For example, <strong>do not</strong> use the following code:
+                        <code class="pre">
+                        <code>
+                            if x = y { /*statements here*/ }
+                        </code>
+                        </code>
+                        If you need to use assignments on conditional expressions, a common practice is to put
+                        additional parentheses around the assignment. For example:
+                        <code class="pre">
+                        <code>
+                            if ((x = y)) { /*statements here*/ }
+                        </code>
+                        </code>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="while_statement">
+                <header>
+                    <h2>while statement</h2>
+                </header>
+                <article>
+                    <p>
+                        A <code>while statement</code> executes its statements as long as a specified condition
+                        evaluates to true. A while statement looks as follows:
+                        <code class="pre">
+                            while (condition) {statement}
+                    </code>
+                        If the condition evaluates to false, the statement within the loop stops executing and
+                        control passes to the statement following the loop.
+                    </p>
+                    <p>
+                        The condition test occurs before the statement in the loop is executed. If the condition
+                        is true, statement is executed and statement is tested again. If the condition returns
+                        false, execution stops and control is passed to the statement following the
+                        <code>while loop.</code>
+                    </p>
+                    <p>
+                        To execute multiple statements, use a block statement ({...}) to group those statements.
+                        <br />
+                        For example: The following while loop iterates as along as n is less than 3.
+                        <code class="pre">
+                        <code>
+                            var n = 0; var x = 0; while (n < 3) { n++; n += n; }
+                        </code>
+                        </code>
+                        With each iteration, the loop increments n and adds that value to x. Therefore, x and n
+                        takes on the following values:
+                    <ul class="list">
+                        <li>After the first pass: n = 1 and x = 1</li>
+                        <li>After the second pass: n = 2 and x = 3</li>
+                        <li>After the third pass: n = 3 and x = 6</li>
+                    </ul>
+                    After completing the third pass, the condition n < 3 is no longer true, so the loop terminates. </p>
+                </article>
+            </section>
+            <section class="main-section" id="Function_declarations">
+                <header>
+                    <h2>Function declarations</h2>
+                </header>
+                <article>
+                    <p>
+                        A function declaration (or a function definition or function statement) consists of the
+                        function keyword, followed by:
+                    <ul class="list">
+                        <li>The name of the function</li>
+                        <li>A list of arguments to the function, enclosed in parentheses and separated by
+                            commas.
+                        </li>
+                        <li>The JavaScript statements that define the function, enclosed in curly brackets, {}
+                        </li>
+                    </ul>
+                    For example, the following code defines a simple function named square:
+                    <code class="pre">
+                        <code>
+                            function square (number) { return number* number; }
+                        </code>
+                    </code>
+                    </p>
+                    <p>
+                        The function <em>square</em> takes one <code>argument,</code> called number. The
+                        function consists of one statement that says to return the argument of the function (that is
+                        number) multiplied by itself. The return statement specifies the value returned by the
+                        function.
+                        <code class="pre">
+                        <code>
+                            return number* number
+                        </code>
+                        </code>
+                    </p>
+                    <p>
+                        <code>Primitive parameters</code> (such as a number) are passed to functions by value;
+                        the value is passed to the function, but if the <code>function</code> changes the value of
+                        the parameter, this value is not reflected globally or in the calling function.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>
+                    <h2>Reference</h2>
+                </header>
+                <article>
+                    <p>
+                        All the Documentation in this page is taken directly from <a
+                            href="https://developer.mozilla.org" target="_top">MDN.</a>
+                    </p>
+                </article>
+            </section>
+        </main>
+        </div>
+        <!--the main document flexible container ends here-->
+        </div>
+        <!--the parent flexible container wrapper ends here-->
+    </body>
+
+</html>
