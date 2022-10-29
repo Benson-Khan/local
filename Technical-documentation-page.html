@@ -56,13 +56,15 @@
                         <li><code>Date,</code></li>
                         <li> and <code>Math,</code></li>
 
-                    </ul> and a core set of language elements such as <ul>
+                    </ul>
+                    <p>and a core set of language elements such as </p>
+                    <ul>
                         <li><code>operators,</li></code>
                         <li><code>control structures,</li></code>
                         <li>and <code>statements.</li></code>
-                    </ul> JavaScript can be extended for a variety of purposes by supplementing it with
-                    additional
-                    objects; for example:
+                    </ul>
+                    <p>JavaScript can be extended for a variety of purposes by supplementing it with
+                        additional objects; for example: </p>
                     <ul class="list">
                         <li>Client-side JavaScript extends the core language by supplying objects to control a
                             browser and its Document Object Model (DOM). For example, Client-side extensions allow an
@@ -209,18 +211,14 @@
                         this case is the if statement. <br />
                         <br>
                         <code class="pre">
-                        <code>
                     if (true) { var x = 5; } console.log(x); // 5
-                        </code>
                         </code>
                         This behavior changes, when using the <code>let</code> declaration introduced ECMAScript
                         2015:
                         <br />
                         <code class="pre">
-                        <code>
                     if (true) {let y = 5;} console.log(y); ReferenceError: y is <br />
                     not defined
-                        </code>
                         </code>
                     </p>
                 </article>
@@ -253,9 +251,7 @@
                         syntax of a constant identifier is the same as for a variable identifier; it must start with a
                         letter, underscore, or dollar sign and can contain alphabetic, numeric or underscore characters.
                         <code class="pre">
-                        <code>
                             const PI = 3.14
-                        </code>
                         </code>
                     </p>
                     <p>
@@ -273,21 +269,17 @@
                         </em>
                         For example:
                         <code class="pre">
-                        <code>
-                        //THIS WILL CAUSE AN ERROR function f() {}; const f = 5; 
-                        //THIS WILL ALSO CAUSE AN ERROR function f() {const g = 6; var g; 
+                        //THIS WILL CAUSE AN ERROR function f() {}; const f = 5; <br />
+                        //THIS WILL ALSO CAUSE AN ERROR function f() {const g = 6; var g; <br />
                         //statements}
-                        </code>
                         </code>
                     </p>
                     <p>
                         However, object attributes are not protected, so the following statement is executed
                         without any problems:
                         <code class="pre">
-                        <code>
                             const MY_OBJECT = {"key" : "value"}; MY_OBJECT.key =
                             "otherValue";
-                        </code>
                         </code>
                     </p>
                 </article>
@@ -335,9 +327,7 @@
                         Use the <em>else</em> statement to execute a statement if the logical condition if false. An if
                         statement looks as follows:
                         <code class="pre">
-                        <code>
                             if (condition) { statement_1; } else { statement_2; }
-                        </code>
                         </code>
                     </p>
                     <p>
@@ -350,10 +340,8 @@
                         You may also compound the statements using <em>else if</em> to have multiple conditions
                         tested in a sequence as follows;
                         <code class="pre">
-                        <code>
-                            if (condition_1) { statement_1; } else if (condition_2) { statement_2; } else if (condition_n) 
-                            { statement_n; } else { statement_last; }
-                        </code>
+                            if (condition_1) { statement_1; } else if (condition_2) { statement_2; } else <br />
+                            if (condition_n) { statement_n; } else { statement_last; }
                         </code>
                     </p>
                     <p>
@@ -362,15 +350,10 @@
                         it is always advisable to always use <code>block statements,</code> especially when nesting if
                         statements.
                         <code class="pre">
-                        <code>
-                            if (condition) { statement_1_runs_if_condition_is_true;
-
-                            statement_2_runs_if_condition_is_true; } else 
-
-                            { statement_3_runs_if_condition_is_false;
-
-                            statement_4_runs_if_condition_is_false; }
-                        </code>
+                            if (condition) { statement_1_runs_if_condition_is_true; <br />
+                            statement_2_runs_if_condition_is_true; } else <br />
+                            { statement_3_runs_if_condition_is_false; <br />
+                            statement_4_runs_if_condition_is_false; } <br />
                         </code>
                     </p>
                     <p>
@@ -378,16 +361,12 @@
                         expressions, because the assignment can be confused with equality when glancing over the code.
                         For example, <strong>do not</strong> use the following code:
                         <code class="pre">
-                        <code>
                             if x = y { /*statements here*/ }
-                        </code>
                         </code>
                         If you need to use assignments on conditional expressions, a common practice is to put
                         additional parentheses around the assignment. For example:
                         <code class="pre">
-                        <code>
                             if ((x = y)) { /*statements here*/ }
-                        </code>
                         </code>
                     </p>
                 </article>
@@ -402,7 +381,7 @@
                         evaluates to true. A while statement looks as follows:
                         <code class="pre">
                             while (condition) {statement}
-                    </code>
+                        </code>
                         If the condition evaluates to false, the statement within the loop stops executing and
                         control passes to the statement following the loop.
                     </p>
@@ -417,18 +396,18 @@
                         <br />
                         For example: The following while loop iterates as along as n is less than 3.
                         <code class="pre">
-                        <code>
                             var n = 0; var x = 0; while (n < 3) { n++; n += n; }
-                        </code>
                         </code>
                         With each iteration, the loop increments n and adds that value to x. Therefore, x and n
                         takes on the following values:
+                    </p>
                     <ul class="list">
                         <li>After the first pass: n = 1 and x = 1</li>
                         <li>After the second pass: n = 2 and x = 3</li>
                         <li>After the third pass: n = 3 and x = 6</li>
                     </ul>
-                    After completing the third pass, the condition n < 3 is no longer true, so the loop terminates. </p>
+                    <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.
+                            </p>
                 </article>
             </section>
             <section class="main-section" id="Function_declarations">
@@ -447,11 +426,9 @@
                         <li>The JavaScript statements that define the function, enclosed in curly brackets, {}
                         </li>
                     </ul>
-                    For example, the following code defines a simple function named square:
+                    <p>For example, the following code defines a simple function named square:</p>
                     <code class="pre">
-                        <code>
                             function square (number) { return number* number; }
-                        </code>
                     </code>
                     </p>
                     <p>
@@ -460,9 +437,7 @@
                         number) multiplied by itself. The return statement specifies the value returned by the
                         function.
                         <code class="pre">
-                        <code>
-                            return number* number
-                        </code>
+                            return number * number
                         </code>
                     </p>
                     <p>

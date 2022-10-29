@@ -74,13 +74,13 @@ code {
     font-style: normal;
     font-weight: normal;
     line-height: 1.95em;
-    color: #5e5959;
+    color: #5e5959ee;
 }
 
 .pre {
     display: block;
     padding: 30px;
-    background-color: #5e59592a;
+    background-color: #5e595921;
     font-style: oblique;
     margin-left: 40px;
 
