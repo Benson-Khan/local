@@ -39,7 +39,7 @@
     color: rgb(11, 33, 44);
     padding: 10px 15px;
     font-weight: 100;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     border-bottom: 1px #5e5959 solid;
 }
 
@@ -83,6 +83,7 @@ code {
     background-color: #5e595921;
     font-style: oblique;
     margin-left: 40px;
+    word-spacing: 10px;
 
 }
 
