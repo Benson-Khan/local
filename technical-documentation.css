@@ -6,6 +6,9 @@
 #parent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
     position: relative;
 }
 
@@ -17,14 +20,12 @@
     height: 100vmax;
     position: fixed;
     left: 0%;
-    scrollbar-3dlight-color: aquamarine;
     border-right: 2px solid #5e5959;
 }
 
 #main-doc {
     flex: 75%;
     max-width: 75%;
-    min-width: 75%;
     padding: 10px;
     position: absolute;
     left: 25%;
