@@ -1,12 +1,17 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5e59592f;
 }
 
 #parent {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
     position: relative;
 }
@@ -14,12 +19,13 @@
 #navbar {
     flex: 25%;
     max-width: 25%;
-    padding: 10px;
+    padding: 10px 0px;
     background-color: #5e595931;
     height: 100vmax;
     position: fixed;
     left: 0%;
-    border-right: 2px solid #5e5959;
+    border-right: 2px solid #5e5959de;
+    border-left: 2px solid #5e5959de;
 }
 
 #main-doc {
@@ -37,29 +43,39 @@
     display: block;
     text-decoration: none;
     color: rgb(11, 33, 44);
-    padding: 10px 15px;
+    padding: 10px 0px;
     font-weight: 100;
-    font-size: 1.15rem;
-    border-bottom: 1px #5e5959 solid;
+    font-size: 1.25rem;
 }
 
-#navbar a:nth-child(14) {
+.link-border {
+    border-bottom: 1px solid #000000;
+    width: inherit;
+}
+
+.link-border:first-of-type {
+    border-top: 1px solid #000000;
+    width: inherit;
+}
+
+.link-border:last-of-type {
     border-bottom: none;
-}
-
-#navbar a:first-of-type {
-    border-top: 1px #5e5959 solid;
 }
 
 #navbar a:hover {
     background: #413c3c79;
 }
 
+.vent>li {
+    display: inline;
+    font-style: italic;
+}
+
 h1 {
     justify-content: center;
     text-align: center;
     font-weight: normal;
-    font-size: 1.70em;
+    font-size: 1.85em;
 }
 
 h2 {
