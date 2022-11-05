@@ -18,7 +18,6 @@ body {
 
 #navbar {
     flex: 25%;
-    max-width: 25%;
     padding: 10px 0px;
     background-color: #5e595931;
     height: 100vmax;
@@ -31,13 +30,12 @@ body {
 #main-doc {
     flex: 75%;
     max-width: 75%;
-    padding: 10px;
+    margin-left: -5%;
+    padding: 10px 0;
     position: absolute;
     left: 25%;
-    margin-left: -5%;
 
 }
-
 
 #navbar a {
     display: block;
@@ -66,9 +64,12 @@ body {
     background: #413c3c79;
 }
 
-.vent>li {
-    display: inline;
+.vent>li,
+code {
     font-style: italic;
+    font-weight: 100;
+    font-family: fantasy;
+    list-style-type: lower-alpha;
 }
 
 h1 {
@@ -76,11 +77,13 @@ h1 {
     text-align: center;
     font-weight: normal;
     font-size: 1.85em;
+    color: rgb(4, 126, 4);
 }
 
 h2 {
     font-weight: 500;
     font-size: 1.8rem;
+    color: rgb(4, 126, 4);
 }
 
 p,
