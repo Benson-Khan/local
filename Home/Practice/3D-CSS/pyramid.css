@@ -4,9 +4,10 @@
                 align-items: center;
                 align-content: center;
                 max-height: 100vh;
+                margin-top: 10rem;
             }
 
-            .pyramid {
+            #pyramid {
                 position: relative;
                 width: 400px;
                 height: 400px;
@@ -72,7 +73,7 @@
                 }
             }
 
-            .pyramid {
+            #pyramid {
                 animation: rotate 5s linear 0s infinite;
             }
 
